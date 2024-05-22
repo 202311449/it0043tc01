@@ -1,0 +1,123 @@
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card:nth-child(1) {
+    background-color: #e06f1e; 
+}
+
+.card:nth-child(2) {
+    background-color: #bf1998;
+}
+
+.card:nth-child(3) {
+    background-color: #ecca08;
+}
+
+.card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+.image {
+    background-image: url('bgcards.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 85px;
+    text-align: center;
+    height: 170px;
+}
+
+.details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.name {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.type {
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.type.Fire {
+    background-color: #d10f0fae;
+}
+
+
+.type.Psychic {
+    background-color: #F85888;
+}
+
+.type.Electric {
+    background-color: #F8D030;
+}
+
+.type.Rock {
+    background-color: #B8A038;
+}
+
+.type.Ground {
+    background-color: #E0C068;
+}
+
+.type.Fairy {
+    background-color: #EE99AC;
+}
+
+.type.Grass {
+    background-color: #1b610d;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
