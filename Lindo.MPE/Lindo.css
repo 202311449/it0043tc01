@@ -1,0 +1,150 @@
+body {
+    background-image: url('https://wallpapers.com/images/hd/pokemon-stadium-1920-x-1080-wallpaper-2mzh30c645wfi9w2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+}
+
+.pokemon {
+    flex: 1 0 25%;
+    margin: 0.8rem;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon:hover{
+    transform: scale(1,1);
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url('pokemonbg.jpg');
+    display: inline;
+}
+
+.pokemon img {
+    max-width: 65%;
+    height: auto;
+}
+
+.pokemon p {
+    margin: 15px 1 1 1;
+}
+
+.pokeball {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.pikachu {
+    background-color: #e3e00f;
+}
+
+.bellsprout {
+    background-color: yellow;
+}
+
+.bulbasaur {
+    background-color: #71C558;
+}
+
+.caterpie {
+    background-color: green;
+}
+
+.charmander {
+    background-color: #EA7A3C;
+}
+
+.dratini {
+    background-color: #6A7BAF;
+}
+
+.eevee {
+    background-color: brown;
+}
+
+.squirtle {
+    background-color: #539AE2;
+}
+
+.jigglypuff {
+    background-color: #E397D1;
+}
+
+.meowth {
+    background-color: #635a5a;
+}
+
+.mew {
+    background-color: #dd42f5;
+}
+
+.snorlax {
+    background-color: #AAB09F;
+}
+
+
+@media (max-width: 1024px) {
+    .pokemon {
+        flex: 1 0 75%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .pokemon p {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    .pokemon img {
+        max-width: 50px;
+    }
+
+    .pokeball {
+        display: inline-block;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .pokemon {
+        flex: 1 0 100%;
+        flex-direction: column;
+    }
+
+    .pokemon p {
+        text-align: center;
+    }
+
+    .pokeball {
+        display: none;
+    }
+    
+}
