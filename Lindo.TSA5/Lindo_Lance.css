@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ippo-container {
+    width: 85vw;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #00314F;  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+    border: 5px solid #FCE4AB;
+    padding: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.race {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.desc {
+    text-align: center;
+    line-height: 1.5;
+}
+
+#Ippo {
+    background-color: #7696A5;
+    color: black;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#Mamoru {
+    background-color: #E01725;
+    color: black;
+    grid-column: 3 / 3;
+    grid-row: 1;
+}
+
+#Sendo {
+    background-color: #7696A5;
+    color: black;
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+}
+
+#Miyata {
+    background-color: #E01725;
+    color: black;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+#Date {
+    background-color: #7696A5;
+    color: black;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+@media (max-width: 1100px) {
+    .ippo-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #Ippo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #Ippo .details,
+    #Miyata .details {
+        flex-direction: column;
+    }
+
+    #Mamoru {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #Sendo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #Miyata {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #Date {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #Date .details {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 920px) {
+    .ippo-container {
+        grid-template-columns: 1fr;
+    }
+
+    .details {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        margin-left: 20px;
+        justify-content: center;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 160px;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .race {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .desc {
+        text-align: justify;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+    #Miyata .details {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #Ippo .details {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #Date .race{
+        text-align: center;
+    }
+
+    #Ippo, #Mamoru, #Sendo, #Miyata, #Date{
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    
+}
