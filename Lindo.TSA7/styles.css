@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 325px;
+}
+
+.reset-grow, .gap-control, .grow-control {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.gap-control input, .grow-control input {
+    width: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-direction {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-buttons, .justify-content, .align-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.justify-content > button, .align-items > button {
+    flex: 1 1 calc(50% - 10px);
+}
+
+.buttons h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    border: 1px solid black;
+    width: 500px;
+    height: 5500px;
+    margin-left: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: brown;
+}
+
+.box3 {
+    background-color: green;
+}
+
+button {
+    background-color: #5b00a8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #7200cc;
+}
+
+.reset, .gap {
+    width: 100%;
+}
+
+.controls h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="reset-grow">
+                <button class="reset" onclick="resetFlexbox()">Reset</button>
+            </div>
+            <div class="gap-control">
+                <input type="number" id="gap" value="0" onchange="setGap(this.value)">
+                <button class="gap" onclick="setGap(document.getElementById('gap').value)">Gap</button>
+            </div>
+            <div class="buttons flex-direction">
+                <h3>Flex Direction</h3>
+                <div class="flex-buttons">
+                    <button onclick="setFlexDirection('row')">Row</button>
+                    <button onclick="setFlexDirection('column')">Column</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <h3>Justify Content</h3>
+                <div class="justify-content">
+                    <button onclick="setJustifyContent('flex-start')">Start</button>
+                    <button onclick="setJustifyContent('center')">Center</button>
+                    <button onclick="setJustifyContent('flex-end')">End</button>
+                    <button onclick="setJustifyContent('space-between')">Space Between</button>
+                    <button onclick="setJustifyContent('space-around')">Space Around</button>
+                    <button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <h3>Align Items</h3>
+                <div class="align-items">
+                    <button onclick="setAlignItems('flex-start')">Start</button>
+                    <button onclick="setAlignItems('center')">Center</button>
+                    <button onclick="setAlignItems('flex-end')">End</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <h3>Flex Grow</h3>
+                <div class="grow-control">
+                    <button class="grow-all" onclick="growAll()">Grow All</button>
+                </div>
+                <div class="grow-control">
+                    <input type="number" id="grow1" value="0" onchange="setFlexGrow(1, this.value)">
+                    <button onclick="grow(1)">Grow B-1</button>
+                </div>
+                <div class="grow-control">
+                    <input type="number" id="grow2" value="0" onchange="setFlexGrow(2, this.value)">
+                    <button onclick="grow(2)">Grow B-2</button>
+                </div>
+                <div class="grow-control">
+                    <input type="number" id="grow3" value="0" onchange="setFlexGrow(3, this.value)">
+                    <button onclick="grow(3)">Grow B-3</button>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox-container" id="flexbox-container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+    </div>
+    <script src="lindo.js"></script>
+</body>
+</html>
